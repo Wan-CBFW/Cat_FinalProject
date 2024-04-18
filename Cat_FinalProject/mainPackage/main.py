@@ -13,6 +13,15 @@
 # Anything else that's relevant:                                                                         *
 #*********************************************************************************************************
 import json
+from jsonPackage.json import *
 if __name__ == "__main__":
-    pass
+    
+    #pass
+    list_one = jsonToList("EncryptedGroupHints Spring 2024 Section 001-1.json")
+    cat_list = list_one["Cat"]
+    print(cat_list)
+    list_two = jsonToList("TeamsAndEncryptedMessagesForDistribution - 001.json")
+    cat_list_two = list_two["Cat"]
+    print(cat_list_two)
+    
     
