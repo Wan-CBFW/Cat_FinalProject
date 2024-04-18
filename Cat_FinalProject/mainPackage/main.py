@@ -14,14 +14,21 @@
 #*********************************************************************************************************
 import json
 from jsonPackage.json import *
+from txtPackage.txt import txtToList
 if __name__ == "__main__":
-    
     #pass
+    text_list = txtToList("UCEnglish.txt")
     list_one = jsonToList("EncryptedGroupHints Spring 2024 Section 001-1.json")
     cat_list = list_one["Cat"]
-    print(cat_list)
+    decoded_list_one = []
+    for num in cat_list:
+        newint = int(num)
+        decoded_list_one.append(text_list[newint])
+    print(decoded_list_one)
     list_two = jsonToList("TeamsAndEncryptedMessagesForDistribution - 001.json")
-    cat_list_two = list_two["Cat"]
-    print(cat_list_two)
+    key = list_two["Cat"]
+    print(key)
+    
+
     
     
