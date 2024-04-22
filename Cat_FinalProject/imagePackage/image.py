@@ -8,7 +8,7 @@
 # Semester/Year: Spring 2024                                                                                                *
 # Brief Description of the assignment: Collaborative assignment demonstrating working with JSON, Pillow, txt, lists and more*
 #                                                                                                                           *
-# Brief Description of what this module does: Creates function to open and load images with pillow                          *
+# Brief Description of what this module does: Defines function to open and load images with pillow                          *
 # Citations: Bill Nicholson                                                                                                 *
 # Anything else that's relevant:                                                                                            *
 #****************************************************************************************************************************
