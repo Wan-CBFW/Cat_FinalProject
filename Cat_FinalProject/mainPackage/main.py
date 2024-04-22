@@ -15,6 +15,7 @@
 import json
 from jsonPackage.json import *
 from txtPackage.txt import txtToList
+from imagePackage.image import *
 if __name__ == "__main__":
     text_list = txtToList("UCEnglish.txt")
     list_one = jsonToList("EncryptedGroupHints Spring 2024 Section 001-1.json")
@@ -29,3 +30,5 @@ if __name__ == "__main__":
     list_two = jsonToList("TeamsAndEncryptedMessagesForDistribution - 001.json")
     key = list_two["Cat"]
     print(key)
+    
+    loadImage("Cat_FinalProject.jpg").show()
