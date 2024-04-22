@@ -21,6 +21,7 @@ def jsonToList(path):
     @return: contents of json file
     '''
     with open(path) as file:
-        jsonlist = json.load(file)
+        rawlist = json.load(file)
+    jsonlist = rawlist["Cat"]
     return jsonlist
     
